@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Heart SVM | Risk Classifier</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><div class="brand"><span class="heart">♥</span><div><b>HEART SVM</b><small>Machine Learning Project</small></div></div><span class="tag">SVM KERNEL CLASSIFIER</span></header>
+<main><section class="intro"><p class="eyebrow">MACHINE LEARNING • CLASSIFICATION</p><h1>Heart Disease <em>Risk Classifier</em></h1><p class="sub">Enter the dataset parameters and compare predictions from three trained SVM kernels.</p></section>
+<div class="layout"><section class="panel"><div class="panelhead"><div><h2>Patient parameters</h2><p>Use values in the same format as the training dataset.</p></div><span class="step">01 / INPUT</span></div>
+<form id="form"><div class="fields">
+<label>Age <input name="Age" type="number" min="1" max="120" value="52" required></label>
+<label>Sex <select name="Sex"><option value="M">Male (M)</option><option value="F">Female (F)</option></select></label>
+<label>Chest pain type <select name="ChestPainType"><option>ASY</option><option>ATA</option><option>NAP</option><option>TA</option></select></label>
+<label>Resting blood pressure <input name="RestingBP" type="number" min="0" value="130" required></label>
+<label>Cholesterol <input name="Cholesterol" type="number" min="0" value="220" required></label>
+<label>Fasting blood sugar <select name="FastingBS"><option value="0">No (0)</option><option value="1">Yes (1)</option></select></label>
+<label>Resting ECG <select name="RestingECG"><option>Normal</option><option>ST</option><option>LVH</option></select></label>
+<label>Maximum heart rate <input name="MaxHR" type="number" min="1" max="250" value="150" required></label>
+<label>Exercise angina <select name="ExerciseAngina"><option value="N">No (N)</option><option value="Y">Yes (Y)</option></select></label>
+<label>Oldpeak <input name="Oldpeak" type="number" step="any" value="0.0" required></label>
+<label class="wide">ST slope <select name="ST_Slope"><option>Up</option><option>Flat</option><option>Down</option></select></label>
+</div><button class="primary" type="submit">Run SVM prediction <span>↗</span></button></form><p class="hint">All 11 input features match the uploaded training model.</p></section>
+<section class="panel result" id="results"><div class="panelhead"><div><h2>Kernel comparison</h2><p>Results from your saved trained models.</p></div><span class="step">02 / OUTPUT</span></div><div class="empty" id="empty"><div class="pulse">⌁</div><b>Awaiting input</b><span>Complete the parameters and run prediction to see all three kernel outputs.</span></div><div id="cards" class="cards hidden"></div><div class="notice">Educational demonstration only. This model is not a medical diagnostic tool. Do not use its output to make healthcare decisions.</div></section></div><footer>Built with HTML, CSS & JavaScript · Browser-side SVM inference</footer></main><script src="app.js"></script></body></html>
